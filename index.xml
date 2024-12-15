@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>World of Vivek</title><link>https://vivek-kk-ragavan.me/</link><description>Recent content on World of Vivek</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2024 Vivek Karunai Kiri Ragavan</copyright><lastBuildDate>Mon, 13 Jun 2022 21:28:51 +0100</lastBuildDate><atom:link href="https://vivek-kk-ragavan.me/index.xml" rel="self" type="application/rss+xml"/><item><title>Education</title><link>https://vivek-kk-ragavan.me/education/</link><pubDate>Mon, 13 Jun 2022 21:28:51 +0100</pubDate><guid>https://vivek-kk-ragavan.me/education/</guid><description>&lt;style>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>World of Vivek</title><link>https://vivekk16.github.io/</link><description>Recent content on World of Vivek</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2024 Vivek Karunai Kiri Ragavan</copyright><lastBuildDate>Mon, 13 Jun 2022 21:28:51 +0100</lastBuildDate><atom:link href="https://vivekk16.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Education</title><link>https://vivekk16.github.io/education/</link><pubDate>Mon, 13 Jun 2022 21:28:51 +0100</pubDate><guid>https://vivekk16.github.io/education/</guid><description>&lt;style>
 .table-responsive {
 width: 100%;
 overflow-x: auto;
@@ -38,7 +38,7 @@ min-width: 600px; /* Adjust if needed */
 &lt;/tbody>
 &lt;/table>
 &lt;/div>
-&lt;hr></description></item><item><title>Experience</title><link>https://vivek-kk-ragavan.me/experience/</link><pubDate>Mon, 13 Jun 2022 21:28:51 +0100</pubDate><guid>https://vivek-kk-ragavan.me/experience/</guid><description>&lt;style>
+&lt;hr></description></item><item><title>Experience</title><link>https://vivekk16.github.io/experience/</link><pubDate>Mon, 13 Jun 2022 21:28:51 +0100</pubDate><guid>https://vivekk16.github.io/experience/</guid><description>&lt;style>
 .table-responsive {
 width: 100%;
 overflow-x: auto;
@@ -96,6 +96,6 @@ min-width: 600px; /* Adjust as needed */
 &lt;/tbody>
 &lt;/table>
 &lt;/div>
-&lt;hr></description></item><item><title>About</title><link>https://vivek-kk-ragavan.me/about/</link><pubDate>Mon, 13 Jun 2022 20:55:37 +0100</pubDate><guid>https://vivek-kk-ragavan.me/about/</guid><description>&lt;div style="text-align: justify;">
+&lt;hr></description></item><item><title>About</title><link>https://vivekk16.github.io/about/</link><pubDate>Mon, 13 Jun 2022 20:55:37 +0100</pubDate><guid>https://vivekk16.github.io/about/</guid><description>&lt;div style="text-align: justify;">
 Vivek Karunai Kiri Ragavan is a passionate graduate student at Purdue University, pursuing a Master’s in Computer and Information Technology. With 4 years of professional experience Vivek has built a strong foundation in Kubernetes, DevOps, and Software Engineering. Currently he is leading the development of Purdue GenAI Studio, advancing artificial intelligence and cloud infrastructure at Purdue RCAC.
 &lt;p>Beyond academics, he is the founder and president of the Cloud Native Association at Purdue, where he drives initiatives to empower students with cutting-edge skills in cloud computing. His leadership journey began during his undergraduate years at Amrita University, where he led Srishti, the Literary Club, and Quizkrieg, the Quiz Club, and represented his college in National Level Quiz Competitions.&lt;/p></description></item></channel></rss>
