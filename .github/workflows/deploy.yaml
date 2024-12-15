@@ -1,47 +1,34 @@
-name: Publish to GH Pages
+name: GitHub Pages
 
 on:
   push:
     branches:
       - main
-  pull_request:
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
+  build-deploy:
+    runs-on: ubuntu-20.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - name: Checkout source
+      - name: Checkout
         uses: actions/checkout@v3
         with:
           submodules: true
-
-      - name: Checkout destination
-        uses: actions/checkout@v3
-        if: github.ref == 'refs/heads/main'
-        with:
-          ref: gh-pages
-          path: built-site
+          fetch-depth: 0
 
       - name: Setup Hugo
-        run: |
-          LATEST_HUGO=$(curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | grep '"tag_name"' | cut -d '"' -f 4)
-          echo "Latest Hugo version: $LATEST_HUGO"
-          curl -L -o /tmp/hugo.tar.gz "https://github.com/gohugoio/hugo/releases/download/${LATEST_HUGO}/hugo_extended_${LATEST_HUGO#v}_Linux-64bit.tar.gz"
-          mkdir -p ${RUNNER_TEMP}/hugo
-          tar -C ${RUNNER_TEMP}/hugo -zxvf /tmp/hugo.tar.gz
-          chmod +x ${RUNNER_TEMP}/hugo/hugo
-          echo "Hugo binary installed successfully"
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "latest"
+
       - name: Build
-        run: ${RUNNER_TEMP}/hugo/hugo
+        run: hugo --minify
 
       - name: Deploy
-        if: github.ref == 'refs/heads/main'
-        run: |
-          cp -R public/* ${GITHUB_WORKSPACE}/built-site/
-          cd ${GITHUB_WORKSPACE}/built-site
-          touch .nojekyll
-          git add .
-          git config user.name 'vivekk16'
-          git config user.email 'vivek16.kvk@gmail.com'
-          git commit -m 'Updated site'
-          git push
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./public
