@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>World of Vivek</title><link>https://vivekk16.github.io/</link><description>Recent content on World of Vivek</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2024 Vivek Karunai Kiri Ragavan</copyright><lastBuildDate>Mon, 13 Jun 2022 21:28:51 +0100</lastBuildDate><atom:link href="https://vivekk16.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Education</title><link>https://vivekk16.github.io/education/</link><pubDate>Mon, 13 Jun 2022 21:28:51 +0100</pubDate><guid>https://vivekk16.github.io/education/</guid><description>&lt;style>
+.table-responsive {
+width: 100%;
+overflow-x: auto;
+-webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS */
+}
+table {
+min-width: 600px; /* Adjust if needed */
+}
+&lt;/style>
+&lt;div class="table-responsive">
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>School&lt;/th>
+&lt;th>Link&lt;/th>
+&lt;th>Degree&lt;/th>
+&lt;th>Date&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td rowspan=2>&lt;img class="customEntitityLogo" src="purdue.png"/>&lt;/td>
+&lt;td rowspan=2>&lt;a href="https://purdue.edu/" target="_blank">Purdue University&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>MS, Computer and Information Technology (Thesis)&lt;/td>
+&lt;td>Aug, 2023 - May, 2025&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td rowspan=2>&lt;img class="customEntitityLogo" src="amrita.png"/>&lt;/td>
+&lt;td rowspan=2>&lt;a href="https://amrita.edu/" target="_blank">Amrita Vishwa Vidyapeetham&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>B.Tech, Computer Science and Engineering&lt;/td>
+&lt;td>July, 2016 - Aug, 2020&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;/div>
+&lt;hr></description></item><item><title>Experience</title><link>https://vivekk16.github.io/experience/</link><pubDate>Mon, 13 Jun 2022 21:28:51 +0100</pubDate><guid>https://vivekk16.github.io/experience/</guid><description>&lt;style>
+.table-responsive {
+width: 100%;
+overflow-x: auto;
+-webkit-overflow-scrolling: touch; /* Smoother scrolling on iOS */
+}
+table {
+min-width: 600px; /* Adjust as needed */
+}
+&lt;/style>
+&lt;div class="table-responsive">
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Company&lt;/th>
+&lt;th>Link&lt;/th>
+&lt;th>Role&lt;/th>
+&lt;th>Dates&lt;/th>
+&lt;th>Location&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;img class="customEntitityLogo" src="purdue.png"/>&lt;/td>
+&lt;td>&lt;a href="https://www.rcac.purdue.edu/" target="_blank">Rosen Center for Advanced Computing&lt;/a>&lt;/td>
+&lt;td>Graduate Professional Assistant&lt;/td>
+&lt;td>Aug, 2023 - Present&lt;/td>
+&lt;td>Hybrid &lt;/br> West Lafayette, IN, USA&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img class="customEntitityLogo" src="lilly.png"/>&lt;/td>
+&lt;td>&lt;a href="https://www.lilly.com/" target="_blank">Eli Lilly and Company&lt;/a>&lt;/td>
+&lt;td>Software Engineer Intern (DevOps and Cloud)&lt;/td>
+&lt;td>May, 2024 - Aug, 2024&lt;/td>
+&lt;td>Hybrid &lt;/br> Indianapolis, IN, USA&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td rowspan=4>&lt;img class="customEntitityLogo" src="cisco.png"/>&lt;/td>
+&lt;td rowspan=4>&lt;a href="https://www.cisco.com/" target="_blank">Cisco&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Software Consulting Engineer II&lt;/td>
+&lt;td>Sep, 2021 - July, 2023&lt;/td>
+&lt;td>Hybrid &lt;/br> Bengaluru, India&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Software Consulting Engineer I&lt;/td>
+&lt;td>Aug, 2020 - Sep, 2021&lt;/td>
+&lt;td>Full Remote &lt;/br> Bengaluru, India&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Technical Undergraduate Intern&lt;/td>
+&lt;td>Jan, 2020 - Jun, 2020&lt;/td>
+&lt;td>Hybrid &lt;/br> Bengaluru, India&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;/div>
+&lt;hr></description></item><item><title>About</title><link>https://vivekk16.github.io/about/</link><pubDate>Mon, 13 Jun 2022 20:55:37 +0100</pubDate><guid>https://vivekk16.github.io/about/</guid><description>&lt;div style="text-align: justify;">
+Vivek Karunai Kiri Ragavan is a passionate graduate student at Purdue University, pursuing a Master’s in Computer and Information Technology. With 4 years of professional experience Vivek has built a strong foundation in Kubernetes, DevOps, and Software Engineering. Currently he is leading the development of Purdue GenAI Studio, advancing artificial intelligence and cloud infrastructure at Purdue RCAC.
+&lt;p>Beyond academics, he is the founder and president of the Cloud Native Association at Purdue, where he drives initiatives to empower students with cutting-edge skills in cloud computing. His leadership journey began during his undergraduate years at Amrita University, where he led Srishti, the Literary Club, and Quizkrieg, the Quiz Club, and represented his college in National Level Quiz Competitions.&lt;/p></description></item></channel></rss>
