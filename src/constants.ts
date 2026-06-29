@@ -4,10 +4,10 @@ export const SITE_DATA = {
     twitter: "",
     x: "",
     bluesky: "",
-    linkedin: "vivek-kk-ragavan",
+    linkedin: "vivekk16",
     github: "vivekk16",
     scholar: "",
-    email: "vkarunai@redhat.com",
+    email: "contact@vivekk16.com",
     description: "Software Engineer with expertise in Kubernetes, Cloud Native, and AI/ML Infrastructure.",
     siteUrl: "https://vivekk16.com",
 };
