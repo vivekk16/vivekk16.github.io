@@ -1,0 +1,190 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+
+import redhatLogo from '../assets/logos/redhat.png';
+import purdueLogo from '../assets/logos/purdue.png';
+import lillyLogo from '../assets/logos/lilly.png';
+import ciscoLogo from '../assets/logos/cisco.png';
+import amritaLogo from '../assets/logos/amrita.png';
+
+import '../styles/experience.css';
+---
+
+<Layout pageTitle="Resume">
+    <div class="page-container">
+        <h1>Resume</h1>
+
+        <section class="exp-section">
+            <h2 class="section-title"><span class="section-icon">💼</span> Work Experience</h2>
+            <div class="roadmap">
+
+                <!-- Stop 1: Right side -->
+                <div class="road-row row-right">
+                    <div class="road-pin-wrap">
+                        <div class="road-pin current-pin">
+                            <div class="pin-head"></div>
+                            <div class="pin-point"></div>
+                        </div>
+                    </div>
+                    <div class="stop-card">
+                        <div class="card-logo-wrapper">
+                            <Image src={redhatLogo} alt="Red Hat" class="company-logo" />
+                        </div>
+                        <div class="card-body">
+                            <div class="card-top">
+                                <h3>Software Engineer</h3>
+                                <span class="badge badge-active">Current</span>
+                            </div>
+                            <a href="https://www.redhat.com/" target="_blank" rel="noopener noreferrer" class="company-link">Red Hat, LLC</a>
+                            <div class="card-meta">
+                                <span class="meta-item">📍 Raleigh, NC, USA</span>
+                                <span class="meta-item">🗓️ Jun 2025 – Present</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Road: right to left -->
+                <svg class="road-svg" viewBox="0 0 400 100" preserveAspectRatio="none">
+                    <path class="road-surface" d="M 60,0 C 60,50 340,50 340,100" />
+                    <path class="road-dash" d="M 60,0 C 60,50 340,50 340,100" />
+                </svg>
+
+                <!-- Stop 2: Left side -->
+                <div class="road-row row-left">
+                    <div class="stop-card">
+                        <div class="card-logo-wrapper">
+                            <Image src={purdueLogo} alt="Purdue University" class="company-logo" />
+                        </div>
+                        <div class="card-body">
+                            <div class="card-top">
+                                <h3>Graduate Professional Assistant</h3>
+                            </div>
+                            <a href="https://www.rcac.purdue.edu/" target="_blank" rel="noopener noreferrer" class="company-link">Rosen Center for Advanced Computing, Purdue University</a>
+                            <div class="card-meta">
+                                <span class="meta-item">📍 West Lafayette, IN, USA</span>
+                                <span class="meta-item">🗓️ Aug 2023 – May 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="road-pin-wrap">
+                        <div class="road-pin">
+                            <div class="pin-head"></div>
+                            <div class="pin-point"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Road: left to right -->
+                <svg class="road-svg" viewBox="0 0 400 100" preserveAspectRatio="none">
+                    <path class="road-surface" d="M 340,0 C 340,50 60,50 60,100" />
+                    <path class="road-dash" d="M 340,0 C 340,50 60,50 60,100" />
+                </svg>
+
+                <!-- Stop 3: Right side -->
+                <div class="road-row row-right">
+                    <div class="road-pin-wrap">
+                        <div class="road-pin">
+                            <div class="pin-head"></div>
+                            <div class="pin-point"></div>
+                        </div>
+                    </div>
+                    <div class="stop-card">
+                        <div class="card-logo-wrapper">
+                            <Image src={lillyLogo} alt="Eli Lilly" class="company-logo" />
+                        </div>
+                        <div class="card-body">
+                            <div class="card-top">
+                                <h3>Tech@Lilly Intern</h3>
+                            </div>
+                            <a href="https://www.lilly.com/" target="_blank" rel="noopener noreferrer" class="company-link">Eli Lilly and Company</a>
+                            <div class="card-meta">
+                                <span class="meta-item">📍 Indianapolis, IN, USA</span>
+                                <span class="meta-item">🗓️ May 2024 – Aug 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Road: right to left -->
+                <svg class="road-svg" viewBox="0 0 400 100" preserveAspectRatio="none">
+                    <path class="road-surface" d="M 60,0 C 60,50 340,50 340,100" />
+                    <path class="road-dash" d="M 60,0 C 60,50 340,50 340,100" />
+                </svg>
+
+                <!-- Stop 4: Left side -->
+                <div class="road-row row-left">
+                    <div class="stop-card">
+                        <div class="card-logo-wrapper">
+                            <Image src={ciscoLogo} alt="Cisco" class="company-logo" />
+                        </div>
+                        <div class="card-body">
+                            <div class="card-top">
+                                <h3>Software Consulting Engineer II</h3>
+                            </div>
+                            <a href="https://www.cisco.com/" target="_blank" rel="noopener noreferrer" class="company-link">Cisco Systems, Inc.</a>
+                            <div class="card-meta">
+                                <span class="meta-item">📍 Bengaluru, India</span>
+                                <span class="meta-item">🗓️ Sep 2021 – Jul 2023</span>
+                            </div>
+                            <div class="sub-roles">
+                                <div class="sub-role">
+                                    <span class="sub-role-title">Software Consulting Engineer I</span>
+                                    <span class="sub-role-date">Aug 2020 – Sep 2021</span>
+                                </div>
+                                <div class="sub-role">
+                                    <span class="sub-role-title">Technical Undergraduate Intern</span>
+                                    <span class="sub-role-date">Jan 2020 – Jun 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="road-pin-wrap">
+                        <div class="road-pin">
+                            <div class="pin-head"></div>
+                            <div class="pin-point"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="exp-section">
+            <h2 class="section-title"><span class="section-icon">🎓</span> Education</h2>
+            <div class="edu-grid">
+                <div class="edu-card">
+                    <div class="card-logo-wrapper">
+                        <Image src={purdueLogo} alt="Purdue University" class="company-logo" />
+                    </div>
+                    <div class="card-body">
+                        <div class="card-top">
+                            <h3>MS, Computer and Information Technology (Thesis)</h3>
+                        </div>
+                        <a href="https://purdue.edu/" target="_blank" rel="noopener noreferrer" class="company-link">Purdue University</a>
+                        <div class="card-meta">
+                            <span class="meta-item">📍 West Lafayette, IN, USA</span>
+                            <span class="meta-item">🗓️ Aug 2023 – May 2025</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <div class="card-logo-wrapper">
+                        <Image src={amritaLogo} alt="Amrita Vishwa Vidyapeetham" class="company-logo" />
+                    </div>
+                    <div class="card-body">
+                        <div class="card-top">
+                            <h3>B.Tech, Computer Science and Engineering</h3>
+                        </div>
+                        <a href="https://amrita.edu/" target="_blank" rel="noopener noreferrer" class="company-link">Amrita Vishwa Vidyapeetham</a>
+                        <div class="card-meta">
+                            <span class="meta-item">📍 Coimbatore, India</span>
+                            <span class="meta-item">🗓️ Jul 2016 – Aug 2020</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</Layout>

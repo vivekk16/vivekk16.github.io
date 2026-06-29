@@ -3,5 +3,5 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://vivekk16.github.io',
+  site: 'https://vivekk16.com',
 });

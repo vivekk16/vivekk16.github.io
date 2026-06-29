@@ -1,0 +1,419 @@
+/* ==========================================================================
+   Experience Page – Winding Road Trip Map
+   ========================================================================== */
+
+.exp-section {
+    margin-bottom: 3.5rem;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.section-icon {
+    font-size: 1.4rem;
+}
+
+/* Roadmap */
+.roadmap {
+    display: flex;
+    flex-direction: column;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* SVG road curves */
+.road-svg {
+    display: block;
+    width: 100%;
+    height: 80px;
+    margin: -4px 0;
+}
+
+.road-surface {
+    fill: none;
+    stroke: #3a3a3a;
+    stroke-width: 28;
+    stroke-linecap: round;
+}
+
+[data-theme="dark"] .road-surface {
+    stroke: #4a4a4a;
+}
+
+.road-dash {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2.5;
+    stroke-dasharray: 8 8;
+    stroke-linecap: round;
+}
+
+[data-theme="dark"] .road-dash {
+    stroke: #ccc;
+}
+
+/* Stop rows */
+.road-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.road-row.row-right {
+    flex-direction: row;
+}
+
+.road-row.row-left {
+    flex-direction: row-reverse;
+}
+
+/* Map pin marker */
+.road-pin-wrap {
+    flex-shrink: 0;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.road-pin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    filter: drop-shadow(0 2px 3px rgba(0,0,0,0.25));
+}
+
+.pin-head {
+    width: 28px;
+    height: 28px;
+    border-radius: 50% 50% 50% 0;
+    background: #e74c3c;
+    transform: rotate(-45deg);
+    position: relative;
+}
+
+.pin-head::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.pin-point {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #c0392b;
+    margin-top: -3px;
+}
+
+.current-pin .pin-head {
+    background: #2c3e50;
+    animation: pin-bounce 2s ease-in-out infinite;
+}
+
+.current-pin .pin-point {
+    background: #1a252f;
+}
+
+@keyframes pin-bounce {
+    0%, 100% { transform: rotate(-45deg) translateY(0); }
+    50% { transform: rotate(-45deg) translateY(-4px); }
+}
+
+/* Cards */
+.stop-card {
+    flex: 1;
+    display: flex;
+    gap: 0.75rem;
+    padding: 0.8rem 1rem;
+    border-radius: 12px;
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    max-width: 420px;
+}
+
+@media (hover: hover) {
+    .stop-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+    }
+}
+
+/* Logo */
+.card-logo-wrapper {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.company-logo {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+}
+
+/* Card body */
+.card-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.card-top {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.15rem;
+}
+
+.card-top h3 {
+    font-size: 0.9rem;
+    font-weight: 650;
+    color: var(--color-primary);
+    margin: 0;
+    line-height: 1.3;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.badge-active {
+    background: var(--color-bg);
+    color: var(--color-primary);
+    border: 1px solid var(--color-border);
+}
+
+.company-link {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.company-link:hover {
+    text-decoration: underline;
+}
+
+.card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem 0.75rem;
+    margin-top: 0.2rem;
+}
+
+.meta-item {
+    font-size: 0.72rem;
+    color: var(--color-text-muted);
+    font-weight: 450;
+}
+
+/* Sub-roles */
+.sub-roles {
+    margin-top: 0.8rem;
+    padding-top: 0.6rem;
+    border-top: 1px dashed var(--color-border);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sub-role {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    padding-left: 0.75rem;
+    border-left: 2px solid var(--color-border);
+}
+
+.sub-role-title {
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--color-primary);
+}
+
+.sub-role-date {
+    font-size: 0.72rem;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+    font-weight: 450;
+}
+
+/* Entrance animation */
+.road-row {
+    opacity: 0;
+    transform: translateY(15px);
+    animation: slide-in 0.5s ease forwards;
+}
+
+.roadmap > :nth-child(1) { animation-delay: 0.1s; }
+.roadmap > :nth-child(2) { animation-delay: 0.2s; }
+.roadmap > :nth-child(3) { animation-delay: 0.3s; }
+.roadmap > :nth-child(4) { animation-delay: 0.4s; }
+.roadmap > :nth-child(5) { animation-delay: 0.5s; }
+.roadmap > :nth-child(6) { animation-delay: 0.6s; }
+.roadmap > :nth-child(7) { animation-delay: 0.7s; }
+
+.road-svg {
+    opacity: 0;
+    animation: fade-in 0.4s ease forwards;
+}
+
+@keyframes slide-in {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+    to { opacity: 1; }
+}
+
+/* Education grid */
+.edu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.edu-card {
+    display: flex;
+    gap: 0.75rem;
+    padding: 0.8rem 1rem;
+    border-radius: 12px;
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+@media (hover: hover) {
+    .edu-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+    }
+}
+
+@media (max-width: 600px) {
+    .edu-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .road-row.row-left {
+        flex-direction: row;
+    }
+
+    .road-svg {
+        display: none;
+    }
+
+    .roadmap {
+        gap: 1rem;
+        padding-left: 3rem;
+        position: relative;
+    }
+
+    .roadmap::before {
+        content: "";
+        position: absolute;
+        left: 1rem;
+        top: 20px;
+        bottom: 20px;
+        width: 8px;
+        background: #3a3a3a;
+        border-radius: 4px;
+    }
+
+    .roadmap::after {
+        content: "";
+        position: absolute;
+        left: calc(1rem + 3px);
+        top: 20px;
+        bottom: 20px;
+        width: 2px;
+        background: repeating-linear-gradient(
+            to bottom,
+            #fff 0px, #fff 6px,
+            transparent 6px, transparent 12px
+        );
+        border-radius: 1px;
+    }
+
+    .road-pin-wrap {
+        position: absolute;
+        left: -2.5rem;
+        width: 30px;
+    }
+
+    .road-pin {
+        transform: scale(0.8);
+    }
+
+    .road-row {
+        position: relative;
+    }
+
+    .stop-card {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.25rem;
+        border-radius: 12px;
+    }
+
+    .card-logo-wrapper {
+        width: 52px;
+        height: 52px;
+        padding: 6px;
+    }
+
+    .company-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .card-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
+
+    .card-meta {
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .sub-role {
+        flex-direction: column;
+        gap: 0.1rem;
+    }
+}

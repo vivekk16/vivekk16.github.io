@@ -16,10 +16,10 @@
     "resume"
   ],
   "license": "MIT",
-  "author": "whydevils",
+  "author": "Vivek Karunai Kiri Ragavan",
   "repository": {
     "type": "git",
-    "url": "https://github.com/whydevils/astro-scholar"
+    "url": "https://github.com/vivekk16/vivekk16.github.io"
   },
   "scripts": {
     "dev": "astro dev",
